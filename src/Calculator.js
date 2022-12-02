@@ -353,6 +353,7 @@ class Calculator extends Component {
                     </div>
                 </div>
 
+<!--
                 <div className="save-section py-5">
                     <div className="row pb-3">
                         <div className="col-sm">
@@ -382,6 +383,8 @@ class Calculator extends Component {
                     </div>
                     }
                 </div>
+-->
+
 
                 <Modal show={this.state.showModal} onHide={this.handleClose}>
                     <Modal.Header closeButton>
