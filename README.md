@@ -11,6 +11,9 @@ npm install
 # start dev server
 npm run dev
 
-# build client to sourdough/static
+# build client to /build
 npm run build
+
+# deploy to surdeg.surge.sh
+npm run deploy
 ```

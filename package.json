@@ -7,7 +7,7 @@
     "build": "npm run clean && webpack --mode production",
     "clean": "rimraf dist",
     "dev": "webpack-dev-server --open --mode development",
-    "deploy": "npm run build && surge dist surdeg.surge.sh"
+    "deploy": "npm run build && surge build surdeg.surge.sh"
   },
   "author": "",
   "license": "ISC",
