@@ -90,5 +90,14 @@
     padding-left: 10px;
 }
 
+.calculator-navbar {
+    background-color: #f9dbd1;
+    color: #000;
+}
+
+.calculator-light {
+    background-color: #fcf2e8;
+}
+
 
 
