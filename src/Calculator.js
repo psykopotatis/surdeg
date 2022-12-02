@@ -14,20 +14,20 @@ class Calculator extends Component {
         this.state = {
             name: '',
             flour: {
-                name: 'Flour',
+                name: 'Mjöl',
                 weight: 1000,
                 percent: 100,
                 selected: true
             },
             ingredients: {
                 water: {
-                    name: 'Water',
+                    name: 'Vatten',
                     weight: 800,
                     percent: 80,
                     selected: true
                 },
                 milk: {
-                    name: 'Milk',
+                    name: 'Mjölk',
                     weight: 0,
                     percent: 0,
                     selected: false
@@ -39,13 +39,13 @@ class Calculator extends Component {
                     selected: false
                 },
                 sourdough: {
-                    name: 'Sourdough starter',
+                    name: 'Surdeg',
                     weight: 150,
                     percent: 15,
                     selected: true
                 },
                 butter: {
-                    name: 'Butter',
+                    name: 'Smör',
                     weight: 0,
                     percent: 0,
                     selected: false
@@ -57,7 +57,7 @@ class Calculator extends Component {
                     selected: true
                 },
                 sugar: {
-                    name: 'Sugar',
+                    name: 'Socker',
                     weight: 0,
                     percent: 0,
                     selected: false
@@ -253,7 +253,7 @@ class Calculator extends Component {
         console.log('handleSave');
         const ingredients = clone(this.state.ingredients);
         ingredients['flour'] = this.state.flour;
-        ingredients['flour']['name'] = 'Flour';
+        ingredients['flour']['name'] = 'Mjöl';
         console.log(this.state.name);
         console.table(ingredients);
 
@@ -309,7 +309,7 @@ class Calculator extends Component {
                         <div className="row">
                             <div className="col-sm">
                                 <label className="calculator-label"
-                                       htmlFor="flourInput">Flour</label>
+                                       htmlFor="flourInput">Mjöl</label>
                             </div>
                         </div>
 
@@ -340,22 +340,22 @@ class Calculator extends Component {
                 <div className="row mb-5">
                     <div className="col-sm">
                         <Button variant="primary" onClick={this.handleShow}>
-                            Change ingredients
+                            Ändra ingredienser
                         </Button>
                     </div>
                 </div>
 
                 <div className="row mb-5">
                     <div className="col">
-                        <p><strong>Weight</strong></p>
-                        <p>Your dough weighs <strong>{this.getDoughTotal()} grams</strong>. You can make <strong>two
-                            loaves</strong> that weigh <strong>{this.getDoughTotal() / 2} grams</strong> each.</p>
+                        <p><strong>Vikt</strong></p>
+                        <p>Din deg väger <strong>{this.getDoughTotal()} gram</strong>. Du kan göra <strong>två
+                            limpor bröd</strong> som väger <strong>{this.getDoughTotal() / 2} gram</strong> vardera.</p>
                     </div>
                 </div>
 
                 <Modal show={this.state.showModal} onHide={this.handleClose}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Change ingredients</Modal.Title>
+                        <Modal.Title>Ändra ingredienser</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
                         <form>
@@ -368,14 +368,14 @@ class Calculator extends Component {
                                        disabled
                                 />
                                 <label className="custom-control-label"
-                                       htmlFor="flourCheckbox">Flour</label>
+                                       htmlFor="flourCheckbox">Mjöl</label>
                             </div>
                             {map(this.state.ingredients, this.renderCheckboxes)}
                         </form>
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={this.handleClose}>
-                            Close
+                            Stäng
                         </Button>
                     </Modal.Footer>
                 </Modal>
