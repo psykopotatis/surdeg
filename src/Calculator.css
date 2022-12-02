@@ -1,0 +1,94 @@
+.input-row {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.input-row .col-sm {
+    width: 50%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.input-row .first-col {
+    padding-right: 10px;
+}
+
+.calculator-label {
+    font-weight: 600;
+    margin-bottom: 2px;
+    text-transform:capitalize;
+}
+
+.input-wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    background: #fff;
+    border: 1px solid rgb(225, 224, 215);
+    border-radius: 4px;
+}
+
+.input-wrapper input {
+    flex-grow: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    min-width: 25%;
+    background: none;
+    color: inherit;
+    font-family: inherit;
+    font-weight: 500;
+    text-align: right;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    padding-right: 0.3em;
+}
+
+.input-wrapper input:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.input-wrapper p {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline-block;
+    text-align: right;
+    padding: 0 0.6em 0 0;
+    margin: auto;
+    color: #A5A287;
+}
+
+
+.checkbox-lg .custom-control-label::before,
+.checkbox-lg .custom-control-label::after {
+    top: .8rem;
+    width: 1.55rem;
+    height: 1.55rem;
+}
+
+.checkbox-lg .custom-control-label {
+    padding-top: 13px;
+    padding-left: 6px;
+}
+
+
+.checkbox-xl .custom-control-label::before,
+.checkbox-xl .custom-control-label::after {
+    top: 1.2rem;
+    width: 1.85rem;
+    height: 1.85rem;
+}
+
+.checkbox-xl .custom-control-label {
+    padding-top: 23px;
+    padding-left: 10px;
+}
+
+
+

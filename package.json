@@ -1,0 +1,45 @@
+{
+  "name": "sourdough-calculator",
+  "version": "1.0.0",
+  "description": "!!111 :D",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run clean && webpack --mode production",
+    "clean": "rimraf dist",
+    "dev": "webpack-dev-server --open --mode development",
+    "deploy": "npm run build && surge dist surdeg.surge.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "bootstrap": "^4.4.1",
+    "lodash": "^4.17.19",
+    "prop-types": "^15.6.2",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.5.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.23.1",
+    "surge": "^0.21.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
